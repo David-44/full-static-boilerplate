@@ -1,6 +1,2 @@
 node_modules/
-jspm_packages
-.npm
-npm-debug.log*
-*.tgz
-.env
+assets/
