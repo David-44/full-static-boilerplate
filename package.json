@@ -1,0 +1,21 @@
+{
+  "name": "NAME IT",
+  "version": "1.0.0",
+  "description": "DESCRIBE IT",
+  "main": "scripts.js",
+  "scripts": {
+    "watch": "node-sass -o ./ scss/main.scss -w",
+    "prod": "node ./dist/app.js",
+    "first": "echo dist/ >> .gitignore && rm -rf .git && npm install && git init && cd dist && npm install && git init"    
+  },
+  "author": "NAME IT",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^6.0.0"
+  }
+}
