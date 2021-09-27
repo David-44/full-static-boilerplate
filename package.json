@@ -6,15 +6,19 @@
   "scripts": {
     "watch": "node-sass -o ./ scss/main.scss -w",
     "prod": "node ./dist/app.js",
-    "first": "echo dist/ >> .gitignore && rm -rf .git && npm install && git init && cd dist && npm install && git init"    
+    "first": "echo dist/ >> .gitignore && rm -rf .git && npm install && git init && cd dist && npm install && git init"
   },
   "author": "NAME IT",
   "license": "ISC",
   "devDependencies": {
     "del": "^6.0.0",
+    "ejs": "^3.1.6",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
+    "gulp-ejs": "^5.1.0",
     "gulp-htmlmin": "^5.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.2",
     "node-sass": "^6.0.0"
   }
