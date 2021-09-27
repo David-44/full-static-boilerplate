@@ -28,6 +28,8 @@ This is opinionated and adapted to static website projects only.
 - `$ npm run prod `: runs production site, access with http://localhost:3000.
 - `$ gulp clean `: Cleans the public production folder.
 - `$ gulp deploy`: Copies assets + html, css and js files to public folder.
+- `$ gulp sass`: same as npm run watch
+- `$ gulp watchDev`: Watches for EJS templates and sass files being modified
 
 
 

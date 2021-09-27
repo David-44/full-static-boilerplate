@@ -147,14 +147,7 @@ function watchSass(cb) {
 
 
 
-
-
-/******************************************************************/
-
-
-
-
-// Watching for change
+// Watching for change on devlopment site before copying to live site
 function watchFiles(cb) {
   watch('assets/**/*', copyAssets);
   watch('./**.html', minifyHTML);
@@ -164,11 +157,31 @@ function watchFiles(cb) {
 
 
 
-// Watch for change on any public file and exports all to dist
+
+
+/*************************** EXPORTING INTERFACES *****************************/
+
+/* PRODUCTION INTERFACE */
+
+// Watch for change on any public file and exports all to prod
 exports.watch = watchFiles;
 
-// Replacing the production files
+// Replacing all the production files at once
 exports.deploy = series(cleanPublic, copyAssets, minifyHTML, minifyCSS, minifyJS);
 
 // Cleaning the production folder
 exports.clean = cleanPublic;
+
+
+
+/* DEV INTERFACE */
+
+// Watching for change on dev files
+exports.watchDev = watchDev;
+
+// Watching for change on sass files
+exports.sass = watchSass;
+
+// Watching for change on a specific file
+// change both watchfile function and generateSingle function
+exports.watchFile = watchFile;
