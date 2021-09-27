@@ -106,9 +106,13 @@ button, input, select, textarea {
 
 
 /* Reset appearance before working with form elements */
-input {
+input, select {
 	webkit-appearance: none;
 	appearance: none;
+
+  &::-ms-expand {
+    display: none;
+  }
 }
 
 

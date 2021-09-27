@@ -72,8 +72,8 @@ $font-family__header     : serif !default;
 
 // Sizes
 // Note: line height and is set in _typography.scss and should be one of:
-// - $large-mul * 1em
-// - 2em
+// - $large-mul
+// - 2
 /// @type Length
 $font-size--base: 16px !default;
 $font-size--medium: 18x !default;
